@@ -68,14 +68,13 @@ Execute o aplicativo:
 python app.py
 
 📦 Dependências
+
 customtkinter
-
 pandas
-
 matplotlib
-
 fpdf
 
-🤝 Contato
+Contato
+
 Desenvolvido por Natan Luz
 https://github.com/NatanLuz
