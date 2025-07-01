@@ -43,15 +43,15 @@ python app.py
 
 
 📁 Estrutura do projeto
-├── app.py                # Interface principal (CustomTkinter)
-├── Core/
-│   ├── dados.py          # Funções de dados (CSV)
-│   └── relatorios.py     # Relatórios (mensais, Excel, PDF)
-├── Gastos.csv            # Planilha de dados gerada automaticamente
-├── Relatorio_2025_7.pdf  # Exemplo de relatório mensal em PDF
-├── Relatorio_2025_7.xlsx # Exemplo de relatório mensal em Excel
-├── requirements.txt      # Dependências do projeto
-└── README.md             # Este arquivo
+ app.py
+  Core/
+    dados.py          
+      relatorios.py     
+         Gastos.csv           
+             Relatorio_2025_7.pdf  
+                 Relatorio_2025_7.xlsx 
+                      requirements.txt     
+                             README.md           
 
 
 
