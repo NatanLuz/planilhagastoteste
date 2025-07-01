@@ -41,17 +41,52 @@ Execute o app:
 
 python app.py
 
+## 🗂️ Estrutura do projeto
 
-📁 Estrutura do projeto
- app.py
-  Core/
-    dados.py          
-      relatorios.py     
-         Gastos.csv           
-             Relatorio_2025_7.pdf  
-                 Relatorio_2025_7.xlsx 
-                      requirements.txt     
-                             README.md           
+planilhagastoteste/
+├── Core/
+│ ├── dados.py
+│ └── relatorios.py
+├── Gastos.csv
+├── Relatorio_YYYY_M.xlsx
+├── Relatorio_YYYY_M.pdf
+├── app.py
+├── README.md
+└── requirements.txt
 
+- `Core/`: módulos com funções para manipulação dos dados e relatórios  
+- `Gastos.csv`: arquivo onde os dados financeiros são salvos  
+- `Relatorio_YYYY_M.*`: relatórios gerados para meses/anos específicos  
+- `app.py`: aplicação principal com a interface gráfica  
+- `requirements.txt`: lista de dependências do projeto  
 
+---
 
+## ▶️ Como executar
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/NatanLuz/planilhagastoteste.git
+cd planilhagastoteste
+
+Instale as dependências (recomendado usar ambiente virtual):
+
+pip install -r requirements.txt
+
+Execute o aplicativo:
+
+python app.py
+
+📦 Dependências
+customtkinter
+
+pandas
+
+matplotlib
+
+fpdf
+
+🤝 Contato
+Desenvolvido por Natan Luz
+https://github.com/NatanLuz
