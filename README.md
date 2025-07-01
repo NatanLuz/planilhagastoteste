@@ -1,4 +1,4 @@
-# 💸 Controle Financeiro Pessoal
+# Controle Financeiro Pessoal
 
 Um aplicativo simples de controle financeiro feito em **Python** com **CustomTkinter**, para registrar receitas, despesas, visualizar o saldo, gerar gráficos e salvar relatórios mensais em **Excel** e **PDF**.
 
