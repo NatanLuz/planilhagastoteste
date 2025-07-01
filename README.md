@@ -43,17 +43,6 @@ python app.py
 
 ## 🗂️ Estrutura do projeto
 
-planilhagastoteste/
-├── Core/
-│ ├── dados.py
-│ └── relatorios.py
-├── Gastos.csv
-├── Relatorio_YYYY_M.xlsx
-├── Relatorio_YYYY_M.pdf
-├── app.py
-├── README.md
-└── requirements.txt
-
 - `Core/`: módulos com funções para manipulação dos dados e relatórios  
 - `Gastos.csv`: arquivo onde os dados financeiros são salvos  
 - `Relatorio_YYYY_M.*`: relatórios gerados para meses/anos específicos  
