@@ -5,7 +5,7 @@ Um aplicativo simples de controle financeiro feito em **Python** com **CustomTki
 Este projeto foi desenvolvido como um exercício para aprimorar meus conhecimentos em Python e no uso prático de bibliotecas importantes, como CustomTkinter, Pandas, Matplotlib e FPDF. Ele reúne funcionalidades que já utilizei em projetos acadêmicos e trabalhos freelancers, integrando-as em um aplicativo simples e funcional de controle financeiro pessoal.
 
 ---
-## ⚙️ Funcionalidades
+##  Funcionalidades
 
 - ✅ Adição de **receitas** e **despesas**
 - ✅ Classificação por **categoria** (Alimentação, Lazer, etc.)
@@ -16,7 +16,7 @@ Este projeto foi desenvolvido como um exercício para aprimorar meus conheciment
 
 ---
 
-## 🖥️ Tecnologias usadas
+##  Tecnologias usadas
 
 - Python 3
 - CustomTkinter
@@ -26,7 +26,7 @@ Este projeto foi desenvolvido como um exercício para aprimorar meus conheciment
 
 ---
 
-## ▶️ Como executar
+##  Como executar
 
 1. Clone este repositório:
    ```bash
@@ -41,7 +41,7 @@ Execute o app:
 
 python app.py
 
-## 🗂️ Estrutura do projeto
+##  Estrutura do projeto
 
 - `Core/`: módulos com funções para manipulação dos dados e relatórios  
 - `Gastos.csv`: arquivo onde os dados financeiros são salvos  
@@ -51,7 +51,7 @@ python app.py
 
 ---
 
-## ▶️ Como executar
+##  Como executar
 
 1. Clone este repositório:
 
@@ -67,7 +67,7 @@ Execute o aplicativo:
 
 python app.py
 
-📦 Dependências
+Dependências
 
 customtkinter
 pandas
