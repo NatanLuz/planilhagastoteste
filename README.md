@@ -7,10 +7,15 @@ This project was developed as an exercise to improve my Python skills and apply 
 Features
 
 ✅ Add income and expenses
+
 ✅ Categorize entries (Food, Entertainment, etc.)
+
 ✅ Automatic calculation of balance, total income, and expenses
+
 ✅ Pie chart showing expenses by category
+
 ✅ Generate monthly reports (text, Excel, PDF)
+
 ✅ One-click opening of the .csv spreadsheet
 
 Technologies Used:
@@ -19,6 +24,8 @@ CustomTkinter
 Pandas
 Matplotlib
 FPDF
+
+
 
 How to Run
 Clone this repository:
@@ -29,7 +36,6 @@ cd planilhagastoteste
 Install the dependencies (using a virtual environment is recommended):
 
 pip install -r requirements.txt
-
 
 Run the app:
 python app.py
