@@ -17,8 +17,9 @@ Technologies Used:
 Python 3
 CustomTkinter
 Pandas
-Matplotlib
+Matplotlib 
 FPDF
+
 
 How to Run
 Clone this repository:
@@ -31,7 +32,8 @@ Install the dependencies (using a virtual environment is recommended):
 pip install -r requirements.txt
 
 
-Run the app:
+Run this:
+
 python app.py
 
 Project Structure :
