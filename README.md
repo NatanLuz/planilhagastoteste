@@ -8,9 +8,6 @@ Employee time-off spreadsheet
 [![FPDF](https://img.shields.io/badge/FPDF-000000?style=flat&logo=python&logoColor=white)]()
 
 
-
-![Personal Finance Tracker](https://i.imgur.com/4RUiQRc.jpeg)
-
 A simple finance tracking application built with Python and CustomTkinter, designed to record income and expenses, view balance, generate charts, and export monthly reports in Excel and PDF.
 
 This project was developed as an exercise to improve my Python skills and apply practical knowledge of important libraries like CustomTkinter, Pandas, Matplotlib, and FPDF. It brings together features I’ve used in academic projects and freelance work, integrating them into a simple and functional personal finance management app.
