@@ -8,9 +8,7 @@ Controle Financeiro Pessoal (Python + CustomTkinter)
 
 Aplicativo simples e objetivo para controle financeiro pessoal em Windows, feito em Python com interface moderna via CustomTkinter. Permite registrar receitas e gastos, visualizar saldo, gerar gráfico por categoria e exportar relatórios mensais em Excel e PDF.
 
-**Público-alvo:** usuários que desejam um controle básico, direto e local dos lançamentos financeiros (sem banco de dados, usando arquivo CSV).
-
-## Captura de Tela
+**Público-alvo:** usuários que desejam um controle básico, direto e local dos lançamentos financeiros (sem banco de dados, usando arquivo CSV) algo bem rápido, porém nada complexo.
 
 [![capturaprojetoplanilhagastopython.png](https://i.postimg.cc/cCLSVbmt/capturaprojetoplanilhagastopython.png)](https://postimg.cc/TLFFbQBT)
 
