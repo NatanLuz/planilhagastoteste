@@ -1,5 +1,4 @@
-
-Employee time-off spreadsheet
+Controle Financeiro Pessoal (Python + CustomTkinter)
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)]()
 [![CustomTkinter](https://img.shields.io/badge/CustomTkinter-FF6F61?style=flat&logo=python&logoColor=white)]()
@@ -7,63 +6,86 @@ Employee time-off spreadsheet
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white)]()
 [![FPDF](https://img.shields.io/badge/FPDF-000000?style=flat&logo=python&logoColor=white)]()
 
+Aplicativo simples e objetivo para controle financeiro pessoal em Windows, feito em Python com interface moderna via CustomTkinter. Permite registrar receitas e gastos, visualizar saldo, gerar gráfico por categoria e exportar relatórios mensais em Excel e PDF.
 
-A simple finance tracking application built with Python and CustomTkinter, designed to record income and expenses, view balance, generate charts, and export monthly reports in Excel and PDF.
+**Público-alvo:** usuários que desejam um controle básico, direto e local dos lançamentos financeiros (sem banco de dados, usando arquivo CSV).
 
-This project was developed as an exercise to improve my Python skills and apply practical knowledge of important libraries like CustomTkinter, Pandas, Matplotlib, and FPDF. It brings together features I’ve used in academic projects and freelance work, integrating them into a simple and functional personal finance management app.
+## Captura de Tela
 
-## Features
+[![capturaprojetoplanilhagastopython.png](https://i.postimg.cc/cCLSVbmt/capturaprojetoplanilhagastopython.png)](https://postimg.cc/TLFFbQBT)
 
-✅ Add income and expenses  
-✅ Categorize entries (Food, Entertainment, etc.)  
-✅ Automatic calculation of balance, total income, and expenses  
-✅ Pie chart showing expenses by category  
-✅ Generate monthly reports (text, Excel, PDF)  
-✅ One-click opening of the .csv spreadsheet  
+## Funcionalidades
 
-## Technologies Used
-- Python 3  
-- CustomTkinter  
-- Pandas  
-- Matplotlib  
-- FPDF  
+- Adicionar lançamentos de **Receita** e **Gasto**
+- **Categorias** pré-definidas (Alimentação, Transporte, Lazer, Contas, Remédios, Outros)
+- **Cálculo automático** de saldo, total de receitas e total de despesas
+- **Gráfico de pizza** com distribuição de gastos por categoria
+- **Relatórios mensais** (visualização, Excel e PDF)
+- **Abertura rápida** da planilha `Gastos.csv` no app padrão do sistema
 
-## How to Run
+## Requisitos
 
-Clone this repository:
+- Python 3.10 ou superior
+- Pacotes: `customtkinter`, `pandas`, `matplotlib`, `fpdf`, `openpyxl`
+
+> Observação: o `openpyxl` é necessário para salvar relatórios em Excel (`.xlsx`).
+
+## Instalação
+
+Clone o repositório e instale as dependências:
 
 ```bash
 git clone https://github.com/NatanLuz/planilhagastoteste.git
 cd planilhagastoteste
 
-Install the dependencies (using a virtual environment is recommended):
-pip install -r requirements.txt
+# (Opcional) criar ambiente virtual
+python -m venv .venv
+.venv\Scripts\activate
 
-Run the app:
+# Instalar pacotes necessários
+pip install customtkinter pandas matplotlib fpdf openpyxl
+```
 
+## Execução
+
+Inicie a aplicação:
+
+```bash
 python app.py
+```
 
-Project Structure
+Ao iniciar, o sistema cria automaticamente o arquivo `Gastos.csv` (se não existir).
 
-Core/: modules with functions for data handling and report generation
+## Estrutura dos Dados (CSV)
 
-Gastos.csv: file where financial data is stored
+Arquivo: `Gastos.csv`
 
-Relatorio_YYYY_M.*: reports generated for specific months/years
+Colunas:
 
-app.py: main application with the graphical interface
+- `Data` (YYYY-MM-DD)
+- `Tipo` (`Receita` ou `Gasto`)
+- `Categoria` (uma das categorias pré-definidas)
+- `Descrição` (texto livre)
+- `Valor` (número positivo)
 
-requirements.txt: list of project dependencies
+## Relatórios
 
-Dependencies
+- **Visualização do relatório mensal:** informar mês e ano na interface e clicar em "Relatório do mês escolhido".
+- **Salvar em Excel:** gera `Relatorio_<ANO>_<MES>.xlsx` usando `openpyxl`.
+- **Salvar em PDF:** gera `Relatorio_<ANO>_<MES>.pdf` usando `FPDF`.
 
-customtkinter
+Arquivos de exemplo presentes no repositório:
 
-pandas
+- `Relatorio_2025_7.xlsx`
+- `Relatorio_2025_7.pdf`
 
-matplotlib
+## Estrutura do Projeto
 
-fpdf
+- `app.py`: aplicação principal com a interface gráfica
+- `Core/dados.py`: utilitários e manipulação de dados
+- `Core/relatorios.py`: funções para relatórios (apoio)
+- `Gastos.csv`: base de dados local (CSV)
 
-Developed by Natan Luz
+## Autor
 
+Natan Luz
