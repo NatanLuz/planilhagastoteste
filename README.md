@@ -16,10 +16,14 @@ Aplicativo simples e objetivo para controle financeiro pessoal em Windows, feito
 
 - Adicionar lançamentos de **Receita** e **Gasto**
 - **Categorias** pré-definidas (Alimentação, Transporte, Lazer, Contas, Remédios, Outros)
+
 - **Cálculo automático** de saldo, total de receitas e total de despesas
+
 - **Gráfico de pizza** com distribuição de gastos por categoria
+
 - **Relatórios mensais** (visualização, Excel e PDF)
-- **Abertura rápida** da planilha `Gastos.csv` no app padrão do sistema
+
+- **Abertura rápida** da planilha `Gastos.csv` no app padrão do sistema.
 
 ## Requisitos
 
@@ -52,7 +56,7 @@ Inicie a aplicação:
 python app.py
 ```
 
-Ao iniciar, o sistema cria automaticamente o arquivo `Gastos.csv` (se não existir).
+Ao iniciar, o sistema cria automaticamente o arquivo `Gastos.csv` (se ele não existir).
 
 ## Estrutura dos Dados (CSV)
 
@@ -76,7 +80,7 @@ Arquivos de exemplo presentes no repositório:
 
 - `Relatorio_2025_7.xlsx`
 - `Relatorio_2025_7.pdf`
-
+(Quando salva o arquivo, pode mudar o formato, utilize o .PDF,.docx..)
 ## Estrutura do Projeto
 
 - `app.py`: aplicação principal com a interface gráfica
@@ -85,5 +89,6 @@ Arquivos de exemplo presentes no repositório:
 - `Gastos.csv`: base de dados local (CSV)
 
 ## Autor
-
 Natan Luz
+
+Contato: natandaluz01@gmail.com
