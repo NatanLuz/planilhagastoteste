@@ -10,6 +10,7 @@ Aplicativo simples e objetivo para controle financeiro pessoal em Windows, feito
 
 **Público-alvo:** usuários que desejam um controle básico, direto e local dos lançamentos financeiros (sem banco de dados, usando arquivo CSV) algo bem rápido, porém nada complexo.
 
+Projeto com expansões de funcionalidades 
 [![capturaprojetoplanilhagastopython.png](https://i.postimg.cc/cCLSVbmt/capturaprojetoplanilhagastopython.png)](https://postimg.cc/TLFFbQBT)
 
 ## Funcionalidades
