@@ -11,7 +11,8 @@ Aplicativo simples e objetivo para controle financeiro pessoal em Windows, feito
 
 **Público-alvo:** usuários que desejam um controle básico, direto e local dos lançamentos financeiros, com armazenamento local em SQLite (sem instalação extra).
 
-Projeto com expansões de funcionalidades
+Projeto com expansões de funcionalidades (primeira versão do projeto)
+
 [![capturaprojetoplanilhagastopython.png](https://i.postimg.cc/cCLSVbmt/capturaprojetoplanilhagastopython.png)](https://postimg.cc/TLFFbQBT)
 
 ## Prints do Projeto
