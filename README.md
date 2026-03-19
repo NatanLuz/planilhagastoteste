@@ -1,5 +1,5 @@
 Controle Financeiro Pessoal (Python + CustomTkinter)
-Relatório simples 
+Relatório simples feito para despesas curtas
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)]()
 [![CustomTkinter](https://img.shields.io/badge/CustomTkinter-FF6F61?style=flat&logo=python&logoColor=white)]()
@@ -14,7 +14,7 @@ Aplicativo simples e objetivo para controle financeiro pessoal em Windows, feito
 Projeto com expansões de funcionalidades 
 [![capturaprojetoplanilhagastopython.png](https://i.postimg.cc/cCLSVbmt/capturaprojetoplanilhagastopython.png)](https://postimg.cc/TLFFbQBT)
 
-## Funcionalidades  do projeto
+## Funcionalidades do projeto
 
 - Adicionar lançamentos de **Receita** e **Gasto**
 - **Categorias** pré-definidas (Alimentação, Transporte, Lazer, Contas, Remédios, Outros)
