@@ -15,7 +15,7 @@ Projeto com expansões de funcionalidades (primeira versão do projeto)
 
 [![capturaprojetoplanilhagastopython.png](https://i.postimg.cc/cCLSVbmt/capturaprojetoplanilhagastopython.png)](https://postimg.cc/TLFFbQBT)
 
-## Prints do Projeto
+## Prints do Projeto (versão atualizada do projeto, desktop melhorado e mais organizado)
 
 ![Tela principal](Docs/printprojeto.PNG)
 ![Dashboard e metas](Docs/printprojeto2.PNG)
