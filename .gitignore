@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Test artifacts
+.pytest_cache/
+.coverage
+
+# Build artifacts
+build/
+dist/
+*.spec
+
+# Local data file
+gastos.db
+
+# Local virtual envs
+.venv/
+venv/
