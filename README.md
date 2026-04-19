@@ -195,5 +195,5 @@ Conteúdo padrão da release:
 
 ## Autor
 
-Natan Luz  
+Natan Da Luz  
 Contato: natandaluz01@gmail.com
