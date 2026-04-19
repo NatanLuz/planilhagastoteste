@@ -1,5 +1,6 @@
-Controle Financeiro Pessoal (Python + CustomTkinter)
-Relatório simples feito para despesas curtas
+# Controle Financeiro Pessoal (Python + CustomTkinter)
+
+Aplicação desktop para controle financeiro pessoal, desenvolvida em Python com interface moderna em CustomTkinter.
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)]()
 [![CustomTkinter](https://img.shields.io/badge/CustomTkinter-FF6F61?style=flat&logo=python&logoColor=white)]()
@@ -7,91 +8,83 @@ Relatório simples feito para despesas curtas
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat&logo=matplotlib&logoColor=white)]()
 [![FPDF](https://img.shields.io/badge/FPDF-000000?style=flat&logo=python&logoColor=white)]()
 
-Aplicativo simples e objetivo para controle financeiro pessoal em Windows, feito em Python com interface moderna via CustomTkinter. Permite registrar receitas e gastos, visualizar saldo, acompanhar dashboard ao vivo (pizza + linha do tempo), definir metas por categoria e exportar relatórios mensais em Excel e PDF.
+O sistema permite registrar receitas e despesas, visualizar saldo em tempo real, acompanhar dashboard analítico (gráfico de pizza e linha do tempo), definir metas por categoria e exportar relatórios mensais em Excel e PDF.
 
-**Público-alvo:** usuários que desejam um controle básico, direto e local dos lançamentos financeiros, com armazenamento local em SQLite (sem instalação extra).
+Público-alvo: usuários que buscam controle financeiro local, objetivo e sem dependência de serviços em nuvem.
 
-Projeto com expansões de funcionalidades (primeira versão do projeto)
+## Visão Geral
+
+Projeto em evolução contínua, com expansão de funcionalidades a cada versão.
 
 [![capturaprojetoplanilhagastopython.png](https://i.postimg.cc/cCLSVbmt/capturaprojetoplanilhagastopython.png)](https://postimg.cc/TLFFbQBT)
 
-## Prints do Projeto (versão atualizada do projeto, desktop melhorado e mais organizado)
+## Prints do Projeto
 
 ![Tela principal](Docs/printprojeto.PNG)
 ![Dashboard e metas](Docs/printprojeto2.PNG)
 
-## Funcionalidades do projeto
+## Funcionalidades
 
-- Adicionar lançamentos de **Receita** e **Gasto**
-- **Categorias** pré-definidas (Alimentação, Transporte, Lazer, Contas, Remédios, Outros)
-
-- **Cálculo automático** de saldo, total de receitas e total de despesas
-
-- **Dashboard ao vivo** com gráfico de pizza por categoria e linha do tempo de saldo mensal
-
-- **Metas por categoria** com barra de progresso e alertas ao aproximar/ultrapassar o limite
-
-- **Tema dinâmico** (System, Dark, Light) e indicador de última atualização do painel
-
-- **Atalhos de teclado**: `Ctrl+Enter` para adicionar lançamento e `Ctrl+F` para busca
-
-- **Busca de transações** por descrição ou categoria
-
-- **Relatórios mensais** (visualização, Excel e PDF com gráfico embutido)
-
-- **Abertura rápida** do banco local `gastos.db` no app padrão do sistema.
+- Lançamento de transações de Receita e Gasto
+- Categorias pré-definidas: Alimentação, Transporte, Lazer, Contas, Remédios e Outros
+- Cálculo automático de saldo, total de receitas e total de despesas
+- Dashboard com gráfico de pizza por categoria e série temporal de saldo
+- Metas por categoria com barra de progresso e alertas de limite
+- Tema dinâmico: System, Dark e Light
+- Atalhos de teclado: `Ctrl+Enter` para adicionar lançamento e `Ctrl+F` para busca
+- Busca de transações por descrição ou categoria
+- Relatórios mensais com visualização, exportação Excel e exportação PDF
+- Abertura rápida do banco local `gastos.db` no aplicativo padrão do sistema
 
 ## Requisitos
 
-- Python 3.10 ou superior
+- Python 3.10+
 - Pacotes: `customtkinter`, `pandas`, `matplotlib`, `fpdf`, `openpyxl`
 
-> O SQLite é nativo do Python (módulo `sqlite3`), então não precisa instalar nada extra para o banco.
+Observações:
 
-> Observação: o `openpyxl` é necessário para salvar relatórios em Excel (`.xlsx`).
+- SQLite é nativo do Python via módulo `sqlite3` e não requer instalação adicional
+- `openpyxl` é necessário para geração de arquivos `.xlsx`
 
 ## Instalação
-
-Clone o repositório e instale as dependências:
 
 ```bash
 git clone https://github.com/NatanLuz/planilhagastoteste.git
 cd planilhagastoteste
 
-# (Opcional) criar ambiente virtual
+# Opcional: criar ambiente virtual
 python -m venv .venv
 .venv\Scripts\activate
 
-# Instalar pacotes necessários
+# Instalar dependências
 pip install -r requirements.txt
 ```
 
 ## Execução
 
-Inicie a aplicação:
-
 ```bash
 python app.py
 ```
 
-Atalhos na interface:
+Atalhos disponíveis na interface:
 
-- `Ctrl+Enter`: adiciona lançamento rapidamente
-- `Ctrl+F`: foca no campo de busca de transações
+- `Ctrl+Enter`: adiciona lançamento
+- `Ctrl+F`: foca no campo de busca
 
-Ao iniciar, o sistema cria automaticamente o banco `gastos.db` (se ele não existir).
+Ao iniciar, o sistema:
 
-Se existir um `Gastos.csv` antigo, o app migra os dados automaticamente para o SQLite na primeira execução.
+- cria automaticamente o banco `gastos.db` se não existir
+- migra automaticamente dados de `Gastos.csv` legado na primeira execução
 
 ## Estrutura dos Dados (SQLite)
 
-Arquivo: `gastos.db`
+Arquivo de banco: `gastos.db`
 
 Tabela `lancamentos`:
 
 - `Data` (YYYY-MM-DD)
 - `Tipo` (`Receita` ou `Gasto`)
-- `Categoria` (uma das categorias pré-definidas)
+- `Categoria` (categoria pré-definida)
 - `Descrição` (texto livre)
 - `Valor` (número positivo)
 
@@ -104,72 +97,66 @@ Tabela `metas`:
 
 ## Relatórios
 
-- **Visualização do relatório mensal:** informar mês e ano na interface e clicar em "Relatório do mês escolhido".
-- **Salvar em Excel:** gera `Relatorio_<ANO>_<MES>.xlsx` usando `openpyxl`.
-- **Salvar em PDF:** gera `Relatorio_<ANO>_<MES>.pdf` usando `FPDF`, com gráfico de gastos embutido.
+- Visualização mensal: informar mês e ano e clicar em "Relatório do mês escolhido"
+- Exportação Excel: gera `Relatorio_<ANO>_<MES>.xlsx` com `openpyxl`
+- Exportação PDF: gera `Relatorio_<ANO>_<MES>.pdf` com `FPDF` e gráfico embutido
 
-Arquivos de exemplo presentes no repositório:
+Arquivos de exemplo no repositório:
 
 - `Relatorio_2025_7.xlsx`
 - `Relatorio_2025_7.pdf`
-  (Quando salva o arquivo, pode mudar o formato, utilize o .PDF,.docx..)
 
 ## Estrutura do Projeto
 
-- `app.py`: aplicação principal com a interface gráfica
-- `Core/dados.py`: camada de dados (SQLite + migração do CSV + metas)
-- `Core/relatorios.py`: funções de relatório (apoio)
-- `gastos.db`: base de dados local (SQLite)
+- `app.py`: aplicação principal com interface gráfica
+- `Core/dados.py`: camada de dados (SQLite, migração CSV e metas)
+- `Core/relatorios.py`: funções auxiliares de relatório
+- `gastos.db`: base local SQLite
 
 ## Testes Automatizados
 
-Instale dependências de desenvolvimento:
+Instalar dependências de desenvolvimento:
 
 ```bash
 pip install -r requirements-dev.txt
 ```
 
-Execute os testes:
+Executar testes:
 
 ```bash
 pytest
 ```
 
-Os testes cobrem os fluxos principais de `Core/dados.py`:
+Cobertura principal em `Core/dados.py`:
 
 - Inicialização do banco
-- Inclusão e cálculo de saldo
-- Relatório mensal, resumo por categoria e série de saldo
-- Metas por categoria e progresso
+- Inclusão de lançamentos e cálculo de saldo
+- Relatório mensal, resumo por categoria e série temporal de saldo
+- Metas por categoria e cálculo de progresso
 - Migração CSV -> SQLite
 
-## Empacotar em .exe (Windows)
-
-Use o script de build:
+## Empacotamento .exe (Windows)
 
 ```powershell
 .\build_exe.ps1
 ```
 
-Ao final, o executável estará em:
+Saídas geradas:
 
 - `dist/ControleFinanceiro/ControleFinanceiro.exe`
-
-Também serão gerados artefatos versionados:
-
 - `dist/ControleFinanceiro-<versao>.exe`
 - `dist/ControleFinanceiro-<versao>-win64.zip`
 
-## Release com versionamento automático
+## Release com Versionamento Automático
 
-O script `release.ps1` resolve a versão automaticamente via tags Git semver.
+O script `release.ps1` resolve a versão automaticamente com base em tags semânticas do Git.
 
 Regras:
 
-- Se informar `-Version`, usa essa versão (ex: `v1.2.3`).
-- Se não informar versão, calcula a próxima patch com base na última tag (ex: `v1.2.3` -> `v1.2.4`).
+- Se informar `-Version`, utiliza a versão fornecida (exemplo: `v1.2.3`)
+- Se não informar, calcula o próximo patch a partir da última tag (exemplo: `v1.2.3` -> `v1.2.4`)
 
-### Exemplos de uso
+### Exemplos
 
 Gerar release local (sem criar tag):
 
@@ -195,7 +182,7 @@ Criar tag, enviar para origin e gerar release:
 .\release.ps1 -PythonCommand ".\.venv\Scripts\python.exe" -Version v1.3.0 -CreateTag -PushTag
 ```
 
-Ao final do fluxo, uma pasta de release é criada em:
+Ao final do processo, a release é criada em:
 
 - `releases/vX.Y.Z/`
 
@@ -208,6 +195,5 @@ Conteúdo padrão da release:
 
 ## Autor
 
-Natan Luz
-
+Natan Luz  
 Contato: natandaluz01@gmail.com
