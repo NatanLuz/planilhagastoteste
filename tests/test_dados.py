@@ -1,3 +1,10 @@
+# - testes adicionais podem ser criados para cobrir mais casos, como:
+# - Verificar comportamento com dados faltantes ou mal formatados no CSV
+# - Testar a função de definir meta com limites inválidos
+# - Garantir que o relatório mensal retorna dados corretos para meses sem lançamentos
+# - Validar que a série de saldo diário lida corretamente com dias sem movimentações    
+# - Para rodar os testes, use o comando: pytest tests/test_dados.py
+
 from datetime import datetime
 
 import pandas as pd
@@ -123,11 +130,3 @@ def test_migracao_csv_normaliza_valor_e_ignora_invalido(banco_isolado):
     assert len(df) == 1
     assert df.iloc[0]["Descrição"] == "Energia"
     assert pytest.approx(float(df.iloc[0]["Valor"]), 0.001) == 1234.56
-
-# - testes adicionais podem ser criados para cobrir mais casos, como:
-# - Verificar comportamento com dados faltantes ou mal formatados no CSV
-# - Testar a função de definir meta com limites inválidos
-# - Garantir que o relatório mensal retorna dados corretos para meses sem lançamentos
-# - Validar que a série de saldo diário lida corretamente com dias sem movimentações
-# - Esses testes ajudam a garantir que o sistema seja robusto e funcione corretamente em diversas situações.        
-# - Para rodar os testes, use o comando: pytest tests/test_dados.py
