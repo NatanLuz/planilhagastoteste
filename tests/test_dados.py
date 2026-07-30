@@ -1,9 +1,3 @@
-# - testes adicionais podem ser criados para cobrir mais casos, como:
-# - Verificar comportamento com dados faltantes ou mal formatados no CSV
-# - Testar a função de definir meta com limites inválidos
-# - Garantir que o relatório mensal retorna dados corretos para meses sem lançamentos
-# - Validar que a série de saldo diário lida corretamente com dias sem movimentações    
-# - Para rodar os testes, use o comando: pytest tests/test_dados.py
 
 from datetime import datetime
 
