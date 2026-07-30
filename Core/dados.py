@@ -8,7 +8,6 @@ DB_FILE = "gastos.db"
 CSV_FILE = "Gastos.csv"
 CATEGORIAS = ["Alimentação", "Transporte", "Lazer", "Contas", "Remédios", "Outros"]
 
-
 def _normalizar_valor(valor_bruto):
 	if pd.isna(valor_bruto):
 		raise ValueError("valor ausente")
@@ -154,7 +153,6 @@ def listar_lancamentos():
 			conn,
 		)
 	return df
-
 
 def calcular_saldo():
 	with _conexao() as conn:
