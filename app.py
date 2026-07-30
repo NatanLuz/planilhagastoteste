@@ -25,7 +25,6 @@ from Core.dados import (
     serie_saldo_diario,
 )
 
-
 class AppFinanceiro(ctk.CTk):
     def __init__(self):
         super().__init__()
